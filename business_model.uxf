@@ -1,0 +1,57 @@
+<diagram program="umletino" version="15.0.0"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>330</x><y>10</y><w>210</w><h>190</h></coordinates><panel_attributes>department
+
+--
+dept_id: int(10)
+e_id: int(10)
+dept_name: varchar(20)
+--
++adddept()
++deldept()
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>20</x><y>260</y><w>210</w><h>190</h></coordinates><panel_attributes>product
+--
+product_id: int(10)
+dept_id: int(10)
+product_name: varchar(20)
+--
++addproduct()
++editproduct()
++delproduct()</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>10</x><y>0</y><w>210</w><h>190</h></coordinates><panel_attributes>employee
+
+--
+e_id: int(10)
+ename: varchar(20)
+address :varchar(20)
+class: varchar(10)
+--
++addemployee()
++editemployee()</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>390</x><y>380</y><w>210</w><h>190</h></coordinates><panel_attributes>project
+--
+p_id: int(10)
+e_id: int(10)
+dept_id: int(10)
+project_name: varchar(20)
+--
++addproject()
++delproject()
++editproject()
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>120</x><y>530</y><w>210</w><h>190</h></coordinates><panel_attributes>dependent
+--
+d_id: int(10)
+dept_id: int(10)
+dept_name: varchar(20)
+gender: char(2)
+--
++updatedependent
++adddependent</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>210</x><y>80</y><w>140</w><h>50</h></coordinates><panel_attributes>lt=-
+m1=0..n
+m2=0..1
+enrolled &gt;</panel_attributes><additional_attributes>10;20;120;20</additional_attributes></element><element><id>Relation</id><coordinates><x>220</x><y>190</y><w>170</w><h>160</h></coordinates><panel_attributes>lt=-
+m1=0..1
+m2=0..n
+</panel_attributes><additional_attributes>150;10;10;140</additional_attributes></element><element><id>Relation</id><coordinates><x>420</x><y>190</y><w>60</w><h>210</h></coordinates><panel_attributes>lt=-
+m1=0..1
+m2=0..n
+</panel_attributes><additional_attributes>20;10;10;190</additional_attributes></element><element><id>Relation</id><coordinates><x>270</x><y>190</y><w>160</w><h>360</h></coordinates><panel_attributes>lt=-
+m1=0..1
+m2=0..1
+</panel_attributes><additional_attributes>130;10;10;340</additional_attributes></element></diagram>
